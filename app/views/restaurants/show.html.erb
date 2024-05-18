@@ -1,0 +1,5 @@
+<h2><%= @restaurant.name %></h2>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.rating %></p>
+
+<%= link_to 'Remove restaurant', restaurant_path(@restaurant), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
